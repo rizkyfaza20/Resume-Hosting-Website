@@ -1,0 +1,22 @@
+{
+  "name": "resume-devops-personal",
+  "version": "1.0.0",
+  "description": "My Resume Personal DevOps",
+  "main": "initiate-firebase.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizkyfaza20/Resume-Hosting-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rizkyfaza20/Resume-Hosting-Website/issues"
+  },
+  "homepage": "https://github.com/rizkyfaza20/Resume-Hosting-Website#readme",
+  "devDependencies": {
+    "firebase-tools": "^10.7.1"
+  }
+}

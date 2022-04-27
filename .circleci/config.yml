@@ -1,19 +1,15 @@
 version: 2.1
 
-deploy-job: 
-  docker: 
-    - image: cimg/base:stable
-  working_directory: /tmp/resume-hosting-website
-  steps: 
-    - run: 
-      name: Deploy master to Firebase Hosting
-      command: ./node_modules/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
-
-workflows:
-  version: 2
-  deploy:
-    jobs:
-      - deploy-job:
-          filters:
-            branches:
-              only: develop
+jobs:
+    build:
+        docker:
+            - image: circleci/node:10.16.0
+        working_directory: ~/repo
+        steps:
+          - checkout
+          
+          - restore_cache:
+              keys:
+                - v1-dependencies""
+          
+         
