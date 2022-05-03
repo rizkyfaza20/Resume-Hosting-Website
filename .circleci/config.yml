@@ -4,14 +4,13 @@ jobs:
     build:
         docker:
             - image: cimg/node:10.16.0
-        working_directory: ~/project/public
+        working_directory: ~/public
         steps:
-          - checkout:
-              path: ~/public
+          - checkout
 
           - restore_cache:
               keys:
-                - v1-dependencies-"{{ checksum "package.json" }}"
+                - v1-dependencies-"{{ checksum "package-lock.json" }}"
                 - v1-dependencies-
           - run: 
                 name: Install Dependencies
@@ -19,7 +18,7 @@ jobs:
           - save_cache:
               paths:
                 - ./node_modules
-              key: v1-npm-deps-{{ checksum "package.json" }}
+              key: v1-npm-deps-{{ checksum "package-lock.json" }}
           - run: 
                 name: Build
                 command: npm build
