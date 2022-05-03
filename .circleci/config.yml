@@ -4,7 +4,7 @@ jobs:
     build:
         docker:
             - image: cimg/node:10.16.0
-        working_directory: ~/project/public
+        working_directory: ~/public
         steps:
           - checkout
           
