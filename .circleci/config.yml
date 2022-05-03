@@ -6,8 +6,9 @@ jobs:
             - image: cimg/node:10.16.0
         working_directory: ~/public
         steps:
-          - checkout
-          
+          - checkout:
+              path: ~/public
+
           - restore_cache:
               keys:
                 - v1-dependencies-"{{ checksum "package.json" }}"
