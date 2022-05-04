@@ -7,22 +7,22 @@ jobs:
         working_directory: ~/public
         steps:
           - checkout
-          - run: cd ~;ls -la; pwd;
-          - restore_cache:
-              keys:
-                - v1-deps"{{ checksum "package.json" }}"
-                - v1-deps-
-          - run: 
-                name: Install Dependencies
-                command: npm install
-          - save_cache:
-              paths:
-                - ./node_modules
-              key: v1-deps-{{ checksum "package-lock.json" }}
-          - run: 
-                name: Build
-                command: npm run build
-          - run:
-                name: Deploy to Firebase
-                command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
+          - run: cd project;ls -la; pwd;
+         # - restore_cache:
+         #     keys:
+         #       - v1-deps"{{ checksum "package.json" }}"
+         #       - v1-deps-
+         # - run: 
+         #       name: Install Dependencies
+         #       command: npm install
+         # - save_cache:
+         #     paths:
+         #       - ./node_modules
+         #     key: v1-deps-{{ checksum "package-lock.json" }}
+         # - run: 
+         #       name: Build
+         #       command: npm run build
+         # - run:
+         #       name: Deploy to Firebase
+         #       command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
          
