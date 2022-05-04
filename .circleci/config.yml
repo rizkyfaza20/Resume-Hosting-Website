@@ -7,18 +7,18 @@ jobs:
         working_directory: ~/public
         steps:
           - checkout
-          
+
           - restore_cache:
               keys:
-                - v1-npm-deps"{{ checksum "package.json" }}"
-                - v1-npm-deps-
+                - v1-deps"{{ checksum "package.json" }}"
+                - v1-deps-
           - run: 
                 name: Install Dependencies
                 command: npm install
           - save_cache:
               paths:
                 - ./node_modules
-              key: v1-npm-deps-{{ checksum "package-lock.json" }}
+              key: v1-deps-{{ checksum "package-lock.json" }}
           - run: 
                 name: Build
                 command: npm run build
