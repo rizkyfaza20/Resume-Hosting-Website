@@ -7,7 +7,7 @@ jobs:
         working_directory: ~/public
         steps:
           - checkout
-
+          - run: cd ~;ls -la; pwd;
           - restore_cache:
               keys:
                 - v1-deps"{{ checksum "package.json" }}"
