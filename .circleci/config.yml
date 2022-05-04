@@ -3,11 +3,13 @@ version: 2.1
 jobs:
     build:
         docker:
-            - image: cimg/node:10.16.0
+            - image: cimg/node:lts
         working_directory: ~/public
         steps:
-          - checkout
-
+          - checkout:
+              path: ~/public
+              
+          - run: cd public; ls -la; pwd;
           - restore_cache:
               keys:
                 - v1-npm-deps"{{ checksum "package.json" }}"
