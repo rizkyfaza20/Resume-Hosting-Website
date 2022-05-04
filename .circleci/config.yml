@@ -6,9 +6,7 @@ jobs:
             - image: cimg/node:lts
         working_directory: ~/public
         steps:
-          - checkout:
-              path: ~/public
-              
+          - checkout
           - run: cd public; ls -la; pwd;
           - restore_cache:
               keys:
