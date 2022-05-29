@@ -11388,8 +11388,8 @@ p.lead {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 3rem;
+  width: 3rem;
   background-color: #495057;
   color: #fff;
   border-radius: 100%;
@@ -11404,7 +11404,7 @@ p.lead {
 }
 
 .dev-icons {
-  font-size: 3rem;
+  font-size: 1rem;
 }
 
 section.resume-section {
