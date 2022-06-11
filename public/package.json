@@ -2,7 +2,6 @@
   "name": "resume-devops-personal",
   "version": "1.0.0",
   "description": "My Resume Personal DevOps",
-  "main": "initiate-firebase.js",
   "scripts": {
     "build": ""
   },
