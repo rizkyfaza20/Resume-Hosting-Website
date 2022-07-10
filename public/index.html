@@ -8,11 +8,10 @@
         <title>Resume - Junior DevOps Engineer</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="/__/firebase/8.10.1/firebase-app.js"></script>
-        <script src="/__/firebase/8.10.1/firebase-analytics.js"></script>
-        <script src="/__/firebase/8.10.1/firebase-performance.js"></script>
+
         <!-- Firebase JS -->
-        <script src="js/initiate-firebase.js" type="module"></script>
+        <base href=".">
+        <script src="js/initiate-firebase.js" type="module" defer></script>
         <script type="javascript">
             perfMetrics.onFirstInputDelay(function(delay, evt) {
                 ga('send', 'event', {
@@ -26,6 +25,8 @@
                 });
               });
         </script>
+        <!-- Devicon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
         <!-- Ionicons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -69,6 +70,7 @@
                         <a href="mailto:rizkyfaza@tutanota.com" _target="blank">rizkyfaza<span style="display:none">-remove-</span>@tutanota.com</a>
                     </div>
                     <p class="lead mb-5">I'm a Junior DevOps Engineer that mainly interest focusing on Azure Cloud (Mostly Maintain on Infrastructure) and also Azure DevOps. Basically focusing on System Administration such as Windows Server and Linux Server Administration, but eager to learn more at DevOps. Being a professional it's not an easy as it looks, but with passion, attitude and also integrity by learn bit by bit, will make a great result.</p>
+                    <p></p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/mrfzy" _target="blank"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://www.github.com/rizkyfaza20" _target="blank"><i class="fab fa-github"></i></a>
@@ -109,7 +111,7 @@
                             <h3 class="mb-0">STMIK AMIK Bandung</h3>
                             <div class="subheading mb-3">Bachelor of Information Technology</div>
                             <div>Information Technology</div>
-                            <p>Status : 4th Semester</p>
+                            <p>Status : 3rd Semester</p>
                             <p>In here, I'm learning about software development, network and cloud engineering fundamentals. </p> 
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">May 2021 - Present</span></div>
@@ -148,15 +150,100 @@
                             IaaS
                         </li>
                         <li class="list-inline-item">
-                            <i class="fa-solid fa-microchip"></i>
+                            <img src="https://img.icons8.com/fluency-systems-filled/16/000000/agile.png"/>
                             CI/CD
                         </li>
                     </ul>
                     <br>
                     <div class="subheading mb-3">Languages, Operating System & Dev Tools</div>
                     <ul class="fa-ul mb-0 dev-icons list-inline">
-                        <li>
-
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-docker"></i>
+                            Docker
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="devicon-bash-plain colored"></i>
+                            Bash
+                        </li>
+                        <li class="list-inline-item">
+                            <ion-icon name="logo-firebase"></ion-icon>
+                            Firebase
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/windows/16/000000/powershell.png"/>
+                            Powershell
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/external-jumpicon-glyph-ayub-irawan/16/000000/external-arm-fitness-jumpicon-glyph-jumpicon-glyph-ayub-irawan.png"/>
+                            Azure Bicep Template
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-linux"></i>
+                            Linux Server
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-windows"></i>
+                            Windows Server
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/windows/20/000000/gitkraken.png"/>
+                            GitKraken
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-git-alt"></i>
+                            Git
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/14/000000/external-development-experience-through-the-native-integrations-of-azure-with-visual-studio-logo-bold-tal-revivo.png"/>
+                            Azure DevOps
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-npm"></i>
+                            NPM
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-node"></i>
+                            Node.js
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-js-square"></i>
+                            Javascript (Basic)
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="subheading mb-3">Platform, Container & Cloud Administration</div>
+                    <ul class="fa-ul mb-0">
+                        <li class="list-inline-item">
+                            <i class="devicon-amazonwebservices-original"></i>
+                            AWS
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="devicon-azure-plain"></i>
+                            Azure
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/external-jumpicon-glyph-ayub-irawan/16/000000/external-arm-fitness-jumpicon-glyph-jumpicon-glyph-ayub-irawan.png"/>
+                            Azure Bicep
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-solid fa-cubes"></i>
+                            Azure Resource Manager
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/material-rounded/16/000000/data-.png"/>
+                            SonarCloud
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/material/16/000000/code-fork--v1.png"/>
+                            WhiteSource
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-docker"></i>
+                            Docker
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/color/16/000000/circleci.png"/>
+                            CircleCI
                         </li>
                     </ul>
                     <br>
@@ -189,13 +276,13 @@
                     <h2 class="mb-5">Awards & Certifications</h2>
                     <ul class="fa-ul mb-0">
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            <span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>
                             Cloud Practitioner Essentials : Amazon Web Services (Dicoding) 
                         </li>
                     </ul>
                     <ul class="fa-ul mb-1">
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            <span class="fa-li"><i class="fa-solid fa-angle-right"></i></i></span>
                             Container as a Service AKS Engine - Workshop  
                         </li>
                     </ul>
