@@ -11436,3 +11436,26 @@ section.resume-section .resume-section-content {
 .ion-icon {
   font-size: 1.15rem;
 }
+.footer-heart{
+  text-align:center;
+  font-family: var(--bs-body-font-family);
+}
+
+.footer-heart a {
+  border-bottom: 1px solid #453886;
+  color: #453886;
+  padding-bottom: .25em; 
+  text-decoration: none;
+}
+
+.footer-heart a:hover{
+  color:#2196f3; 
+  background-size: 20%;
+  border-bottom: 0;
+  padding-bottom: .3em;
+  text-decoration: none;
+}
+
+.emoji {
+  vertical-align: middle;
+}

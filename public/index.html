@@ -5,12 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Resume - Junior DevOps Engineer</title>
+        <title>Resume - DevOps Engineer</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- The core Firebase JS SDK is always required and must be listed first -->
+<<<<<<< HEAD
         <script src="/__/firebase/8.10.1/firebase-app.js"></script>
         <script src="/__/firebase/8.10.1/firebase-analytics.js"></script>
         <script src="/__/firebase/8.10.1/firebase-performance.js"></script>
+=======
+
+        <!-- Firebase JS -->
+        <base href=".">
+        <script src="js/initiate-firebase.js" type="module" defer></script>
+        <script type="javascript">
+            perfMetrics.onFirstInputDelay(function(delay, evt) {
+                ga('send', 'event', {
+                  eventCategory: 'Perf Metrics',
+                  eventAction: 'first-input-delay',
+                  eventLabel: evt.type,
+                  // Event values must be an integer.
+                  eventValue: Math.round(delay),
+                  // Exclude this event from bounce rate calculations.
+                  nonInteraction: true,
+                });
+              });
+        </script>
+        <!-- Devicon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+>>>>>>> 64b04fc5011d9f3bef19c681b40ce16b70074b66
         <!-- Ionicons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -36,7 +58,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certificates</a></li>
                 </ul>
             </div>
         </nav>
@@ -67,6 +89,25 @@
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
+                            <h3 class="mb-0">DevOps Engineer</h3>
+                            <div class="subheading mb-3">Livecom B.V (Branch : Indonesia)</div>
+                            <h4>Responsibility</h4>
+                            <ul>
+                                <li>Create and Manage CI/CD on Azure Devops from build to end</li>
+                                <li>Manage Infrastructure Windows Server Environment</li>
+                                <li>Create and Maintain IaC for Azure Environment (Bicep / ARM Templates)</li>
+                                <li>Manage Infrastructure on Azure Environment (deploy app services and many more)</li>
+                                <li>Troubleshoot issues for development software development (CI Integration)</li>
+                                <li>Integrate 3rd Party Tools for managing source code scanning and code coverage to Azure DevOps</li>
+                                <li>Manage source Database Versioning using dbForge (synchronize database to Software Versioning Control (git) by using script), so dbForge already integrate by colleague, then I manage for the versioning control</li>
+                                <li>Creating and managing Docker Container using Compose even Images.</li>
+                                <li>Installing and Researching monitoring stack using Grafana Prometheus Stacks</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jul 2022 - Mar 2023</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
                             <h3 class="mb-0">Junior DevOps Engineer</h3>
                             <div class="subheading mb-3">D-Shore B.V (Branch : Indonesia)</div>
                             <h4>Responsibility</h4>
@@ -80,8 +121,24 @@
                                 <li>Manage source Database Versioning using dbForge (synchronize database to Software Versioning Control (git) by using script), so dbForge already integrate by colleague, then I manage for the versioning control</li>  
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">May 2021 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jun 2021 - Sep 2022</span></div>
                     </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">IT Support Engineer</h3>
+                            <div class="subheading mb-3">PT Pindad Indonesia</div>
+                            <h4>Responsibility</h4>
+                            <ul>
+                                <li>Maintaining Hardware and Software PCs.</li>
+                                <li>Installing and Maintaining Network connection.</li>
+                                <li>Troubleshooting Hardware and OS (Windows & Linux).</li>
+                                <li>Configuring Network Hardware such DGS and DES.</li>
+                                <li>Cloning HDD and SSD for Backup Restore purposes.</li>
+                                <li>Assist in IoT instalation and troubleshooting devices.</li>
+                                <li>Assist Helpdesk agent by resolving ticket</li>  
+                            </ul>
+                        </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Feb 2020 - Mar 2021</span></div>
                 </div>
             </section>
             <hr class="m-0" />
@@ -94,7 +151,7 @@
                             <h3 class="mb-0">STMIK AMIK Bandung</h3>
                             <div class="subheading mb-3">Bachelor of Information Technology</div>
                             <div>Information Technology</div>
-                            <p>Status : 4th Semester</p>
+                            <p>Status : 5th Semester</p>
                             <p>In here, I'm learning about software development, network and cloud engineering fundamentals. </p> 
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">May 2021 - Present</span></div>
@@ -124,24 +181,125 @@
                             <i class="fa-solid fa-gears"></i>
                             Configuration as Code
                         </li>
-                        <li class="list-inline-item">
-                            <i class="fa-solid fa-network-wired"></i>
-                            DNS
-                        </li>
                         <li class="list-inline-item"> 
                             <i class="fa-solid fa-cubes"></i>
                             IaaS
                         </li>
                         <li class="list-inline-item">
-                            <i class="fa-solid fa-microchip"></i>
+                            <img src="https://img.icons8.com/fluency-systems-filled/16/000000/agile.png"/>
                             CI/CD
                         </li>
                     </ul>
                     <br>
                     <div class="subheading mb-3">Languages, Operating System & Dev Tools</div>
                     <ul class="fa-ul mb-0 dev-icons list-inline">
-                        <li>
-
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-docker"></i>
+                            Docker
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="devicon-bash-plain colored"></i>
+                            Bash
+                        </li>
+                        <li class="list-inline-item">
+                            <ion-icon name="logo-firebase"></ion-icon>
+                            Firebase
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/windows/16/000000/powershell.png"/>
+                            Powershell
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/external-jumpicon-glyph-ayub-irawan/16/000000/external-arm-fitness-jumpicon-glyph-jumpicon-glyph-ayub-irawan.png"/>
+                            Azure Bicep Template
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-linux"></i>
+                            Linux Server
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-windows"></i>
+                            Windows Server
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/windows/20/000000/gitkraken.png"/>
+                            GitKraken
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-git-alt"></i>
+                            Git
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/14/000000/external-development-experience-through-the-native-integrations-of-azure-with-visual-studio-logo-bold-tal-revivo.png"/>
+                            Azure DevOps
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-npm"></i>
+                            NPM
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-node"></i>
+                            Node.js
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/material-outlined/16/null/mysql-logo.png">
+                            MySQL (Basic)
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/material-rounded/16/null/cloud-firewall.png">
+                            Keycloak
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-js-square"></i>
+                            Javascript (Basic)
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="subheading mb-3">Platform, Container & Cloud Administration</div>
+                    <ul class="fa-ul mb-0">
+                        <li class="list-inline-item">
+                            <i class="devicon-amazonwebservices-original"></i>
+                            AWS
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="devicon-azure-plain"></i>
+                            Azure
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/external-jumpicon-glyph-ayub-irawan/16/000000/external-arm-fitness-jumpicon-glyph-jumpicon-glyph-ayub-irawan.png"/>
+                            Azure Bicep
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-solid fa-cubes"></i>
+                            Azure Resource Manager
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/material-rounded/16/000000/data-.png"/>
+                            SonarCloud
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/material/16/000000/code-fork--v1.png"/>
+                            WhiteSource
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fa-brands fa-docker"></i>
+                            Docker
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/external-solidglyph-m-oki-orlando/16/null/external-reverse-prox-cyber-security-solid-solidglyph-m-oki-orlando.png">
+                            Traefik Proxy
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/color/16/000000/circleci.png"/>
+                            CircleCI
+                        </li>
+                        <li class="list-inline-item">
+                                <img src="https://img.icons8.com/color/16/null/grafana.png"/>
+                                Grafana
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="https://img.icons8.com/color/16/null/prometheus-app.png"/>
+                            Prometheus
                         </li>
                     </ul>
                     <br>
@@ -171,18 +329,36 @@
             <!-- Awards-->
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <h2 class="mb-5">Workshop & Certifications</h2>
                     <ul class="fa-ul mb-0">
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            <span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>
                             Cloud Practitioner Essentials : Amazon Web Services (Dicoding) 
                         </li>
-                    </ul>
-                    <ul class="fa-ul mb-1">
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Container as a Service AKS Engine - Workshop  
+                            <span class="fa-li"><i class="fa-solid fa-angle-right"></i></i></span>
+                            Container as a Service AKS Engine - Workshop (Indonesia Cloud Computing Association)
                         </li>
+                        <li>
+                            <span class="fa-li"><i class="fa-solid fa-angle-right"></i></i></span>
+                            Cisco CyberOps Associate. (Cisco Networking Academy)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fa-solid fa-angle-right"></i></i></span>
+                            Cisco Cyber Security Essentials. (Cisco Networking Academy)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fa-solid fa-angle-right"></i></i></span>
+                            Belajar Dasar Manajemen Proyek (Dicoding).
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>
+                            Belajar Dasar - Dasar DevOps (Dicoding).
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>
+                            ICSI - CNSS (Certified Network Security Specialist). 
+                        </li> 
                     </ul>
                 </div>
             </section>
@@ -191,5 +367,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <p class="footer-heart">
+            Made with <g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
+          <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji> by <a href="">Rizky Faza and CircleCI</a>
+        </p>
     </body>
 </html>
