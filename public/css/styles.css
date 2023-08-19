@@ -11459,3 +11459,17 @@ section.resume-section .resume-section-content {
 .emoji {
   vertical-align: middle;
 }
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Adjust this value to control the gap */
+}
+
+.server-list {
+  list-style-type: none;
+  padding: 1;
+}
+
+.server-list i {
+  margin-right: 5px;
+}
