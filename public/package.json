@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My Resume Personal DevOps",
   "scripts": {
-    "build": ""
+    "build": "npm install"
   },
   "repository": {
     "type": "git",
