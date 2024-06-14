@@ -12,15 +12,15 @@
     <script src="/__/firebase/8.10.1/firebase-analytics.js"></script>
     <script src="/__/firebase/8.10.1/firebase-performance.js"></script>
     <!-- DevIcons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />      
     <!-- Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" type="text/css">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -77,10 +77,16 @@
                 
                     <h4>Documentation and Communication:</h4>
                     <ul>
-                        <li>Review and enhance existing technical documentation.</li>
-                        <li>Establish a process for regular documentation updates.</li>
+                        <li>Conduct to develop and research for services to improving K8s clusters,manage the process of deployment and streamline the apps management.</li>
+                        <li>Monitor, develop, and improve the resources management in K8s clusters, which that can improve and reduce the cost usages on cloud.</li> 
+                        <li>Manage the migration of some services from one to other providers on costs overview.</li>    
+                        <li>Processing and collect every execution on the environment and mitigation to make sure every timeline was recorded on the
+                        company documentation </li>
+                        <li>Create the process of K8s application setup from scratch to make sure any developers have knowledge to execute and
+                            develop their own application on the division</li>
+                        <li>Create the Incident response form for recording every issues that detected on the company.</li>
                     </ul>
-                
+
                     <h4>Infrastructure Collaboration:</h4>
                     <ul>
                         <li>Shedule meetings with tech leads and developers.</li>
@@ -104,6 +110,11 @@
                     <ul>
                         <li>Collaborate with senior DevOps to enhance security measures on K8s clusters.</li>
                         <li>Conduct regular security audits and implement necessary adjustments.</li>
+                        <li>Monitor the K8s clusters for how many usages of resources on the nodes and make sure we could pinpoint the target of costs also lowering the financial point of view.</li>
+                        <li>Troubleshoot the K8s nodes and pods that related of services always down and get known codes such as OOMKilled or Eviction</li>
+                        <li>Using Grafana and Prometheus using Blackbox to get all information to make sure every services monitored. Mostly to crawl latency and status of the services.</li>
+                        <li>Track every apps throwback error from Sentry and managed the application registered and management.</li>
+
                     </ul>
                 
                     <h4>Server Management and Application Deployment:</h4>
@@ -112,6 +123,11 @@
                         <li>Develop a backup and recovery strategy for WordPress instances.</li>
                         <li>Plan and execute the deployment of the Room Meeting Booking Page Dockerfile to the SaaS environment.</li>
                         <li>Monitor and optimize the performance of the deployed application.</li>
+                        <li>Create the Infrastructure automation using Terraform to deploy configuration onto third part WAF Cloudflare to manage domain, create rate limiter and manage the WAF on the account</li>
+                        <li>Manage the infrastructure deployment to AWS to deploy Codepipeline, Codedeploy and Codebuild also deploy the ECS services with loadbalancer ALB within the requested services</li>
+                        <li>Create the Helm Chart for K8s services endpoint to requested division and deploy it using ArgoCD</li> 
+                        <li>Manage the build and deployment base image to Google Artifact Registry using Drone CI</li>
+                        <li>Streamlined the base images for PHP images, to specific services and push it to Harbor Private registry</li>
                     </ul>
                 
                     <h4>Collaborative Issue Resolution:</h4>
@@ -284,39 +300,45 @@
                     <br>
                     <div class="subheading mb-3">Programming Languange & DevOps Tools</div>
                     <ul class="fa-ul mb-0 dev-icons list-inline">
-                        <li class="list-inline-item">
-                            <i class="fa-brands fa-docker"></i>
-                            Docker
-                        </li>
-                        <li class="list-inline-item">
-                            <i class="devicon-bash-plain colored"></i>
-                            Bash
-                        </li>
-                        <li class="list-inline-item">
-                            <ion-icon name="logo-firebase"></ion-icon>
-                            Firebase
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="https://img.icons8.com/windows/16/000000/powershell.png"/>
-                            Powershell
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="https://img.icons8.com/external-jumpicon-glyph-ayub-irawan/16/000000/external-arm-fitness-jumpicon-glyph-jumpicon-glyph-ayub-irawan.png"/>
-                            Azure Bicep Template
-                        </li>
-                        <li class="list-inline-item">
-
+                    <li class="list-inline-item">
+                        <i class="fa-brands fa-docker"></i>
+                        Docker
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-bash-plain colored"></i>
+                        Bash
+                    </li>
+                    <li class="list-inline-item">
+                        <ion-icon name="logo-firebase"></ion-icon>
+                        Firebase
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="https://img.icons8.com/windows/16/000000/powershell.png"/>
+                        Powershell
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="https://img.icons8.com/external-jumpicon-glyph-ayub-irawan/16/000000/external-arm-fitness-jumpicon-glyph-jumpicon-glyph-ayub-irawan.png"/>
+                        Azure Bicep Template
+                    </li>
                     <li class="list-inline-item">
                         <img src="https://img.icons8.com/windows/20/000000/gitkraken.png"/>
                         GitKraken
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-helm-original"></i>
+                         Helm 
                     </li>
                     <li class="list-inline-item">
                         <i class="fa-brands fa-git-alt"></i>
                         Git
                     </li>
                     <li class="list-inline-item">
-                        <img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/14/000000/external-development-experience-through-the-native-integrations-of-azure-with-visual-studio-logo-bold-tal-revivo.png"/>
+                        <i class="devicon-azuredevops-plain"></i>
                         Azure DevOps
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="devicon-githubactions-plain"></i>
+                       Github Actions
                     </li>
                     <li class="list-inline-item">
                         <i class="fa-solid fa-cubes"></i>
@@ -335,16 +357,16 @@
                         Python
                     </li>
                     <li class="list-inline-item">
-                        <img src="https://img.icons8.com/material-outlined/16/null/mysql-logo.png">
-                        MySQL (Basic)
+                        <i class="devicon-mysql-original"></i>
+                        MySQL 
                     </li>
                     <li class="list-inline-item">
-                        <img src="https://img.icons8.com/material-rounded/16/null/cloud-firewall.png">
-                        Keycloak
+                        <i class="devicon-mongodb-plain"></i>
+                        MongoDB
                     </li>
                     <li class="list-inline-item">
-                        <i class="fa-brands fa-js-square"></i>
-                        Javascript (Basic)
+                        <i class="devicon-postgresql-plain"></i>
+                        PostgreSQL
                     </li>
                     <li class="list-inline-item">
                         <img src="https://img.icons8.com/color/16/ansible.png"/>
@@ -371,7 +393,7 @@
                 <div class="subheading mb-3">Platform, Container & Cloud Administration</div>
                 <ul class="fa-ul mb-0">
                     <li class="list-inline-item">
-                        <i class="devicon-amazonwebservices-original"></i>
+                        <i class="devicon-amazonwebservices-plain-wordmark"></i>
                         AWS
                     </li>
                     <li class="list-inline-item">
@@ -382,8 +404,12 @@
                         <i class="devicon-googlecloud-plain"></i>
                         Google Cloud Platform
                     </li>
-                    <li class="list-inline-item">
-                        <img src="https://img.icons8.com/material-rounded/16/000000/data-.png"/>
+                    <li class="list-inline-item"></li>
+                        <i class="devicon-digitalocean-original"></i>
+                        Digital Ocean
+                    </li>
+                    <li class="list-inline-item"> 
+                        <i class="devicon-sonarqube-original"></i>
                         SonarCloud
                     </li>
                     <li class="list-inline-item">
@@ -399,20 +425,32 @@
                         Kubernetes
                     </li>
                     <li class="list-inline-item">
-                        <img src="https://img.icons8.com/external-solidglyph-m-oki-orlando/16/null/external-reverse-prox-cyber-security-solid-solidglyph-m-oki-orlando.png">
+                        <i class="devicon-argocd-plain"></i>
+                        ArgoCD
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-traefikproxy-original"></i> 
                         Traefik Proxy
                     </li>
                     <li class="list-inline-item">
-                        <img src="https://img.icons8.com/color/16/000000/circleci.png"/>
+                        <i class="devicon-circleci-plain"></i>
                         CircleCI
                     </li>
                     <li class="list-inline-item">
-                            <i class="devicon-grafana-original"></i>
-                            Grafana
+                        <i class="devicon-grafana-plain"></i>
+                        Grafana
                     </li>
                     <li class="list-inline-item">
                         <i class="devicon-prometheus-original"></i>
                         Prometheus
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="https://img.icons8.com/material-rounded/16/null/cloud-firewall.png">
+                        Keycloak
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-oauth-plain"></i>
+                        OAuth2 Proxy
                     </li>
                 </ul>
                 <br>
@@ -452,34 +490,24 @@
                         Docker Fundamentals (Adinusa - Btech Academy)
                     </li>
                     <li>
-                        <span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>
-                        Cloud Practitioner Essentials : Amazon Web Services (Dicoding) 
-                    </li>
-                    <li>
                         <span class="fa-li"><i class="fa-solid fa-angle-right"></i></i></span>
                         Container as a Service AKS Engine - Workshop (Indonesia Cloud Computing Association)
                     </li>
                     <li>
                         <span class="fa-li"><i class="fa-solid fa-angle-right"></i></i></span>
-                        Cisco CyberOps Associate. (Cisco Networking Academy)
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fa-solid fa-angle-right"></i></i></span>
-                        Belajar Dasar Manajemen Proyek (Dicoding).
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>
-                        Belajar Dasar - Dasar DevOps (Dicoding).
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>
-                        DevOps Crash Course (UpLimit). 
+                        Cisco CyberOps Associate - Cisco Networking Academy <br>
+                        <a href="https://www.credly.com/badges/346b323c-2a5c-4ae9-aefb-4cdfbf3729ff"> Badge </a>
                     </li>
                     <li>
                         <span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>
                         AWS Cloud Quest Badge - AWS Cloud Practicioner <br>
                         <a href="https://www.credly.com/badges/a1768f4f-661c-4536-ae36-f87e9047edfa/linked_in_profile"> Badge </a> 
                     </li> 
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>
+                        AWS Cloud Developing - AWS Academy <br>
+                        <a href="https://www.credly.com/badges/338ee21b-42b1-4c8a-9657-e821fafc2e6c"> Badge </a>
+                    </li>
                 </ul>
             </div>
         </section>
